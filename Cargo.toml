@@ -1,0 +1,17 @@
+[package]
+name = "byte-search"
+version = "0.1.0"
+edition = "2024"
+description = "A macro for generating fast byte-search functions using the SWAR (SIMD-within-a-register) technique."
+keywords = ["swar", "simd", "search", "bytes", "macro"]
+categories = ["algorithms", "no-std"]
+
+[dependencies]
+wide = "1"
+
+[dev-dependencies]
+criterion = "0.8"
+
+[[bench]]
+name = "byte_search"
+harness = false
